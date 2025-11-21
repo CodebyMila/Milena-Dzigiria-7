@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    background: linear-gradient(to top, #1e3c72 0%,
+    #1e3c72 1%, #2a5298 100%);
+    overflow-y: hidden;
+}
+
+
+.frame {
+    height: 80vh;
+    width: 150vh;
+    border: 1px solid black;
+    margin: 5rem auto;
+    background: url(../images/bg.png);
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: 2px 1px 15px 3px #fff8af;
+    box-shadow: 2px 1px 15px 3px #fff8af;
+    overflow-x: hidden;
+
+.palma{
+
+    height: 10px;
+    width: 100%;
+    background: url("C:\Users\minmi\Desktop\
+    Milena-Dzigiria-7\images\tree.png.png");
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: repeat-x;
+    animation: moveRight 9s
+   linear infinite;
+}
+
