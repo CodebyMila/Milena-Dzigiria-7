@@ -17,20 +17,35 @@ body {
     position: relative;
     -webkit-box-shadow: 2px 1px 15px 3px #fff8af;
     box-shadow: 2px 1px 15px 3px #fff8af;
-    overflow-x: hidden;
+    overflow-x: visible;
 
 .palma{
 
-    height: 10px;
-    width: 100%;
-    background: url("C:\Users\minmi\Desktop\
-    Milena-Dzigiria-7\images\tree.png.png");
-    display: block;
+    height: 140px;
+    width: 500%;
+    background: url("../images/tree.png") repeat-x;
+    background-size: contain;
     position: absolute;
     bottom: 0;
     left: 0;
-    background-repeat: repeat-x;
-    animation: moveRight 9s
-   linear infinite;
+    animation: moveRight 9s  linear infinite;
 }
 
+.car {
+    position: absolute;
+    bottom: 8%;
+    left: 24%;
+    animation: suspension 1s linear infinite;
+}
+
+
+@keyframes moveRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes suspension {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+  100% { transform: translateY(0); }
+}
