@@ -17,18 +17,18 @@ body {
     position: relative;
     -webkit-box-shadow: 2px 1px 15px 3px #fff8af;
     box-shadow: 2px 1px 15px 3px #fff8af;
-    overflow-x: visible;
+    overflow-x: hidden;
 
 .palma{
 
     height: 140px;
     width: 500%;
     background: url("../images/tree.png") repeat-x;
-    background-size: contain;
+    background-size: auto;
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: moveRight 9s  linear infinite;
+    animation: movePalma 8s  linear infinite;
 }
 
 .car {
@@ -39,13 +39,15 @@ body {
 }
 
 
-@keyframes moveRight {
+@keyframes movePalma {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-1200px); }
 }
 
 @keyframes suspension {
   0% { transform: translateY(0); }
-  50% { transform: translateY(3px); }
+  50% { transform: translateY(-3000px); }
   100% { transform: translateY(0); }
+
 }
+
