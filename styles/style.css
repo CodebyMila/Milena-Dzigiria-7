@@ -1,53 +1,54 @@
-
 body {
-    margin: 0;
-    background: linear-gradient(to top, #1e3c72 0%,
-    #1e3c72 1%, #2a5298 100%);
-    overflow-y: hidden;
+  margin: 0;
+  background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  overflow-y: hidden;
 }
 
-
 .frame {
-    height: 80vh;
-    width: 150vh;
-    border: 1px solid black;
-    margin: 5rem auto;
-    background: url(../images/bg.png);
-    background-size: cover;
-    position: relative;
-    -webkit-box-shadow: 2px 1px 15px 3px #fff8af;
-    box-shadow: 2px 1px 15px 3px #fff8af;
-    overflow-x: hidden;
+  height: 80vh;
+  width: 150vh;
+  border: 1px solid black;
+  margin: 5rem auto;
+  background: url(../images/bg.png);
+  background-size: cover;
+  position: relative;
+  -webkit-box-shadow: 2px 1px 15px 3px #fff8af;
+  box-shadow: 2px 1px 15px 3px #fff8af;
+  overflow-x: hidden;
+}
 
-.palma{
-
-    height: 140px;
-    width: 500%;
-    background: url("../images/tree.png") repeat-x;
-    background-size: auto;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    animation: movePalma 8s  linear infinite;
+.palma {
+  height: 140px;
+  width: 500%;
+  background: url('../images/tree.png') repeat-x;
+  background-size: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: movePalma 8s linear infinite;
 }
 
 .car {
-    position: absolute;
-    bottom: 8%;
-    left: 24%;
-    animation: suspension 1s linear infinite;
+  position: absolute;
+  bottom: 8%;
+  left: 24%;
+  animation: suspension 10s linear infinite;
 }
 
-
 @keyframes movePalma {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-1200px); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
 }
 
 @keyframes suspension {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-3000px); }
-  100% { transform: translateY(0); }
-
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
 }
-
