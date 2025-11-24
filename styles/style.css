@@ -32,7 +32,7 @@ body {
   position: absolute;
   bottom: 8%;
   left: 24%;
-  animation: suspension 10s linear infinite;
+  animation: suspension 1s linear infinite;
 }
 
 @keyframes movePalma {
@@ -45,10 +45,7 @@ body {
 }
 
 @keyframes suspension {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 100%;
-  }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
 }
